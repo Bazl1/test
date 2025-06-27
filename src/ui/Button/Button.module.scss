@@ -1,0 +1,99 @@
+@import "@/shared/styles/shared/variables.scss";
+
+.button {
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  user-select: none;
+
+  &__sm {
+    height: 32px;
+    gap: 5px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
+    padding: 0 12px;
+  }
+
+  &__md {
+    height: 36px;
+    gap: 5px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    padding: 0 12px;
+  }
+
+  &__lg {
+    height: 40px;
+    gap: 5px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    padding: 0 14px;
+  }
+
+  &__primary {
+    font-family: $primary-font;
+    color: $white-color;
+    border-radius: 12px;
+    background: $gray-color-900;
+    transition: background 0.3s;
+
+    &:hover {
+      background: $gray-color-550;
+    }
+
+    .button__icon {
+      color: $white-color;
+    }
+  }
+
+  &__secondary {
+    font-family: $primary-font;
+    color: $white-color;
+    border: 1px solid $gray-color-550;
+    border-radius: 12px;
+    background: transparent;
+    transition: background 0.3s;
+
+    &:hover {
+      background: $gray-color-900;
+    }
+
+    .button__icon {
+      color: $white-color;
+    }
+  }
+
+  &__icon {
+    max-width: 20px;
+    max-height: 20px;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+
+  &__block {
+    width: 100%;
+  }
+
+  &__disabled {
+    color: rgba($black-color, 0.24);
+    border-color: rgba($black-color, 0.08);
+    background: rgba($black-color, 0.04);
+    pointer-events: none;
+
+    .button__icon {
+      color: rgba($black-color, 0.24);
+    }
+  }
+}

@@ -1,0 +1,19 @@
+@import "@/shared/styles/shared/variables.scss";
+
+.header {
+  width: 100%;
+  background: $gray-color-900;
+
+  &__inner {
+    height: 60px;
+    display: flex;
+    align-items: center;
+  }
+
+  &__logo {
+    font-size: 18px;
+    font-weight: 500;
+    color: $white-color;
+    line-height: 24px;
+  }
+}

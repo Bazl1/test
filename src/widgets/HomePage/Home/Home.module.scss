@@ -1,0 +1,25 @@
+@import "@/shared/styles/shared/variables.scss";
+
+.home {
+  &__inner {
+    padding: 40px 0;
+  }
+
+  &__row {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  &__title {
+    font-size: 21px;
+    font-weight: 500;
+    line-height: 24px;
+  }
+
+  &__cards {
+    margin-top: 20px;
+  }
+}
